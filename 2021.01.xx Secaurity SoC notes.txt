@@ -1,0 +1,40 @@
+SoC Access control policies
+	eFuse key, through the DMA
+	
+	
+	Attacking hardware instead of software
+	
+	Clock glitching?
+	
+	Nailgun Attack --- Bleeding Gbig Malicious bluetookt low energy packets processed by Texas instruments
+	
+	Hardware attack ROI is high?? Attackers are doing that in HARDware instead of Software
+	
+	
+	Security depends on a SOC configuration not only on the IPs
+	
+	Memory protection unit MPU misconfiguration
+	
+	Programming error in on-chip ... bus access
+	
+	What is HSDL??
+	system verilog assertions?
+	System level security verigication ?? pentetration testing
+	
+	Challange . Verification requires design signals instead of natural language
+	
+	Testcases not scalable and focuses only on known issues
+	
+	CWE --- a list of weaknesses that can lead to vulnerabilites, it is growing in hardware
+	
+	
+	To asses the importance of security, the consequences need to be studied
+	
+	
+	Access through the JTAG --->> Fuse Values during the debug session
+	
+	Information Flow Analysis
+	
+	RTL design??
+	
+	Synopsis

@@ -1,0 +1,44 @@
+ROS size of community is the most well known
+Ruby on rails to web development?
+
+300+ (three hundred plus) companies are using it
+DARPA NASA and DOT
+
+BSD license
+
+Original ROS paper
+
+Starting form 2014 with force
+Federation over centralization, none one centralized entity
+c++ and python --->
+Pypi for robots??
+
+
+Colcon to build the project
+	-ROS packages
+		-ROS nodes are threads that woulkd run in a multiprocessing system
+		-ROS topics -->> signals and shared memory
+			RabbitMq Zero MQ or other PUB/SUB
+	-DDS related to vendors???
+			-ROS bags, to create machine learning and moving around data to collaborators
+		-Simulation through Ignition Gazebo
+		
+		MOVELT -- kinematics and path planning
+		NavStack Slam autonomy??
+		ROS industrial
+		ROS agriculture
+		
+ROS 2??
+
+SBC single board computer>>cross compilation is the problem, runs in ubuntu
+
+Invest in cross compilation infrastructure?
+
+ARM microcontroller running ROS
+BUILDING a ROS package to make it plug-and-play for the ROS community<<<< !!
+	Create ROS nodes -- Mapping the APIs, maybe messages for state/date
+	Action commands and service commands.
+	
+MICRO ROS uROS!!
+
+Runs in FreeRTOS and Zaephyr

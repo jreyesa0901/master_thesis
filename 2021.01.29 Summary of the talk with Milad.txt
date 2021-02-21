@@ -1,0 +1,211 @@
+2021.01.29
+
+TODO 
+The main purpose of the thesis would be to have a result. >> More practical approach.
+
+
+High Priority
+	What are the Binary models
+	REcurrent neural network
+	Check the characteristics of LSTM
+	
+	Write a goal, a description and share it on the presentation.
+		Edge device is the name that has to be given such that it is also flexible.
+	
+	Check the charactersitis of the K210 hardware accelerator (Python capable)
+
+	Check the characteristics of GRU
+	Understand what are the goals for inference stage in machine learning (ONLY)
+		Inference Models
+
+	Read the documentation
+	Check the characteristics of the hardware that was given.
+
+	No handling of commands.
+	
+Papers:
+https://blogs.nvidia.com/blog/2016/08/22/difference-deep-learning-training-inference-ai/
+	Understanding the training and the inference
+
+
+The implementation of a Deep Recurrent Neural Network Language Model on a Xilinx FPGA
+	For DRNN generalities, what makes it DEEP?
+	Conclusion about FPGA advantaages/disadvantages
+Long Short Term Memory Recurrent Neural Network Classifier for Intrusion Detection
+	LST RNN for specific case and info of RNN
+	
+DeltaRNN: A Power-efficient Recurrent Neural Network Accelerator
+	For RNN generalities
+	For FPGA advantages
+	Could it be implemented from FPGA to another architecture
+	For power consumption values or resources
+2020 09 EdgeDRNN: Enabling Low-latency Recurrent Neural Network Edge Inference
+	For depth understanding of the GRU? Model??
+	For depth understanding of Edge FPGAs
+	Could this model be ported to ARM processors? Is this needed?
+	How this RNN outperforms the GPUs
+	
+2016 On the compression of recurrent neural networks with an application to LVCSR acoustic modeling for embedded speech recognition
+	For deep understanding of RNN and the weight problems
+	For reduction of LSTM upto a third of its size
+		Is this already implemented in 2019's or 2020's data info?
+		Has this been already ported?
+2016 12	STF-RNN: Space Time Features-based Recurrent Neural Network for predicting people next location
+	For another applicaation of RNN
+	
+GRU
+
+2019 01 A Novel GRU-RNN Network Model for Dynamic Path Planning of Mobile Robot
+	Another application of GRU RNN
+	
+QUESTIONS
+TO Me
+	Does RNN implies Deep?
+	What are the disadvantages of working with a FPGA in edge devices?
+	How large is the high power consumption? on a LSTM RNN?
+	What is the specifically Gated Recurrent Unit (GRU) neurons?
+TO MILAD
+	The diagram and the model of the Mic Array (drivers not only for micro Commputers)
+
+
+
+Draft to Turau's Msg
+
+
+
+	
+Current state
+
+SPECIFIC NOTES:
+
+Recurrent Neural Networks (RNNs) are widely used in speech recognition and natural language 
+processing applications because of their capability to process temporal sequences. Because 
+RNNs are fully connected, they require a large number of weight memory accesses, leading 
+to high power consumption.
+
+
+I would like to share the goal proposal according to what was talked the last meeting.
+Goal: Port a LTS RNN for speech recognition to a edge device with a plan to be integrated 
+	in an industrial robot.
+
+Focused on inference process as the training has already been approached in 
+		earlier stages of the project
+Main tasks:
+	Evaluating the portability cost due to its "high power consumption"
+	Selection of hardware, advantages and disadvantages regarding expertise and open-source tools
+		FPGA vs ARM architectures and NN Compilers
+	Backend optimization through usage of open source projects // if possible
+	Physycal integration prototype with the selected HW
+	Validation and report of results
+	
+Current resources that I find helpful divided in three fieds and prioritized:
+Generalities:
+
+	Speech recognition RNNs (Mainly during this week)
+	2017 08 Gate-variants of Gated Recurrent Unit (GRU) neural networks
+	For understanding of GRU and its relation to RNN
+2019 08 Performance Evaluation of Deep Neural Networks Applied to Speech Recognition: RNN, LSTM and GRU
+	Understanding the speech recognition oriented NNs
+	
+	Hardware Optimization (mainlz FPGA cases)
+	
+	2020 09 EdgeDRNN: Enabling Low-latency Recurrent Neural Network Edge Inference
+	For depth understanding of the GRU? Model??
+	For depth understanding of Edge FPGAs
+	Could this model be ported to ARM processors? Is this needed?
+	How this RNN outperforms the GPUs
+	
+	NN Compilers for IR and Backend optimization
+
+I would propose another quick meeting to discuss my proposed goal and its feasability.
+ALong with especific questions that might come up during this week.
+
+Specific question: If the datasheet of the mic array can be shared with me.
+
+
+
+Message to Hendrik
+
+Hello Hendrik,
+
+After Friday's meeting could basically ensured the extension of the contact?
+
+I ask this because of my willing for having a copy of the contract in this or next week, 
+as long as it is possible. So I would really appreciate your feedback regarding this topic.
+
+
+Message to new professor Heiko and other.
+
+
+
+
+Loose notes:
+-----------------------------------------------------------
+
+Milad
+
+Inference models
+
+Hey mira 
+
+Written in python Maicrav precise-- TensorFlow Lite / LSTM / GRU // 
+LSTM <<< 
+
+1. Binary Raspberry Pi
+
+
+Inference  already trained by Milat
+
+Model KBs ---  20 Neurons
+
+--------------------------- Binary models
+REcurrent neural network
+Only Inference >>>
+
+K210 Python >>>  
+------
+
+2. handle of commands
+
+
+Mention only to run edge device, to have flexibility
+
+
+Priorities of the tasks for different processors (multi-processors).
+
+
+	
+
+Devices selected:
+STM32H755ZI best
+STM32H747I-DISCO proposed in https://www.st.com/en/embedded-software/fp-ai-vision1.html
+Example with audio https://www.st.com/en/embedded-software/fp-ai-sensing1.html
+
+This is an important article
+https://www.st.com/content/st_com/en/campaigns/artificial-intelligence-at-the-edge.html
+
+Ask to Till about the multiplication embedded in ALU:
+
+I'm escaping from Hendrik about asking him what the fuck 
+
+https://blog.st.com/stm32cubeai-neural-networks/
+
+AI HAT: 
+https://de.rs-online.com/web/p/entwicklungstools-prozessor/2011445/
+
+Option to embedded:
+https://www.seeedstudio.com/Sipeed-MAIX-I-module-WiFi-version-1st-RISC-V-64-AI-Module-K210-inside-p-3206.html
+
+Link to the Processor
+https://www.seeedstudio.com/blog/2019/09/12/get-started-with-k210-hardware-and-programming-environment/
+
+A test bench
+https://www.seeedstudio.com/Sipeed-Maix-Cube-p-4553.html
+
+Another test bench
+https://www.seeedstudio.com/Grove-AI-HAT-for-Edge-Computing-p-4026.html
+
+The Store
+https://www.seeedstudio.com/category/Development-Platforms-c-1002/ai-c-958/Machine-Learning/Edge-Computing.html?product_list_stock=3&product_list_order=news_to_date
+
+
